@@ -5,20 +5,20 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".ForegroundServiceActivity">
 
     <Button
-        android:id="@+id/btn_advanced_text_view"
+        android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SpannableStringBuilder使用"
+        android:text="开启服务"
         android:textColor="@android:color/black" />
 
     <Button
-        android:id="@+id/btn_foreground_service"
+        android:id="@+id/btn_stop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Foreground_Service使用"
+        android:text="关闭服务"
         android:textColor="@android:color/black" />
 
 </LinearLayout>

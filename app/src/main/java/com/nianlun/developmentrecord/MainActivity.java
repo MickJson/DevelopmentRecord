@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.nianlun.advancedtextview.AdvancedTextViewActivity;
+import com.nianlun.foregroundservice.ForegroundServiceActivity;
 
 /**
  * @author 几圈年轮
@@ -26,13 +26,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initView() {
         Button mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
         mBtnAdvancedTextView.setOnClickListener(this);
+        Button mBtnForeground = (Button) findViewById(R.id.btn_foreground_service);
+        mBtnForeground.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_advanced_text_view:
-                startActivity(new Intent(this, AdvancedTextViewActivity.class));
+                break;
+            case R.id.btn_foreground_service:
+                startActivity(new Intent(this, ForegroundServiceActivity.class));
                 break;
             default:
                 break;
