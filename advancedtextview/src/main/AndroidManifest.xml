@@ -3,7 +3,8 @@
     package="com.nianlun.advancedtextview">
 
     <application>
-        <activity android:name=".AdvancedTextViewActivity"></activity>
+        <activity android:name=".BottomAlignmentActivity"></activity>
+        <activity android:name=".AdvancedTextViewActivity" />
     </application>
 
 </manifest>

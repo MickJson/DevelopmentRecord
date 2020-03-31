@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.nianlun.advancedtextview.AdvancedTextViewActivity;
+import com.nianlun.advancedtextview.BottomAlignmentActivity;
 import com.nianlun.foregroundservice.ForegroundServiceActivity;
 
 /**
@@ -16,6 +18,10 @@ import com.nianlun.foregroundservice.ForegroundServiceActivity;
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private Button mBtnBottomAlignment;
+    private Button mBtnAdvancedTextView;
+    private Button mBtnForegroundService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,19 +30,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        Button mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
+        mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
         mBtnAdvancedTextView.setOnClickListener(this);
-        Button mBtnForeground = (Button) findViewById(R.id.btn_foreground_service);
-        mBtnForeground.setOnClickListener(this);
+        mBtnBottomAlignment = (Button) findViewById(R.id.btn_bottom_alignment);
+        mBtnBottomAlignment.setOnClickListener(this);
+        mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
+        mBtnAdvancedTextView.setOnClickListener(this);
+        mBtnForegroundService = (Button) findViewById(R.id.btn_foreground_service);
+        mBtnForegroundService.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_advanced_text_view:
+                startActivity(new Intent(this, AdvancedTextViewActivity.class));
                 break;
             case R.id.btn_foreground_service:
                 startActivity(new Intent(this, ForegroundServiceActivity.class));
+                break;
+            case R.id.btn_bottom_alignment:
+                startActivity(new Intent(this, BottomAlignmentActivity.class));
                 break;
             default:
                 break;
