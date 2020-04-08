@@ -25,7 +25,14 @@
         android:id="@+id/btn_foreground_service"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Foreground_Service使用"
+        android:text="前台服务"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/btn_mqtt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MQTT收发指令"
         android:textColor="@android:color/black" />
 
 </LinearLayout>

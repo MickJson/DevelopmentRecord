@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/advancedtextview" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/foregroundservice" />
+            <option value="$PROJECT_DIR$/mqtt" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
