@@ -1,7 +1,15 @@
 # DevelopmentRecord
 
-主要对平时开发所用知识进行总结记录，欢迎查阅，如果能对大家起到帮助，则不甚荣幸。
+主要对平时`Android`开发所用知识进行总结记录，欢迎查阅。
 
-advancedtextview 包记录了TextView底部对齐及SpannableStringBuilder的使用，详情请查看博客地址：[Android 文本TextView底部对齐实现](https://www.jianshu.com/p/35704cb34d01)及[SpannableStringBuilder实现TextView华丽变身](https://www.jianshu.com/p/ff99172dde67);
+## advancedtextview
 
-foregroundservice 包记录了前台服务的使用，详情请查看博客地址：[SpannableStringBuilder实现TextView华丽变身](https://www.jianshu.com/p/58f3b7404a59);
+`TextView`底部对齐及`SpannableStringBuilder`的使用，博客地址：[Android 文本TextView底部对齐实现](https://www.jianshu.com/p/35704cb34d01)及[SpannableStringBuilder实现TextView华丽变身](https://www.jianshu.com/p/ff99172dde67)
+
+## foregroundservice
+
+前台服务的使用，博客地址：[SpannableStringBuilder实现TextView华丽变身](https://www.jianshu.com/p/58f3b7404a59)
+
+## mqtt
+
+MQTT消息收发，博客地址：[MQTT协议实现Android中的消息收发](https://www.jianshu.com/p/98f62db873ec)
