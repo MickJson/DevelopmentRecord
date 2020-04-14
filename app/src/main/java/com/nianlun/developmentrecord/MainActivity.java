@@ -1,18 +1,16 @@
 package com.nianlun.developmentrecord;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.nianlun.advancedtextview.AdvancedTextViewActivity;
 import com.nianlun.advancedtextview.BottomAlignmentActivity;
+import com.nianlun.floatingwindow.FloatingWindowActivity;
 import com.nianlun.foregroundservice.ForegroundServiceActivity;
 import com.nianlun.mqtt.MqttActivity;
-import com.nianlun.mqtt.MqttAndroidActivity;
 
 /**
  * @author 几圈年轮
@@ -20,11 +18,6 @@ import com.nianlun.mqtt.MqttAndroidActivity;
  * @description Android开发内容整理记录
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
-    private Button mBtnBottomAlignment;
-    private Button mBtnAdvancedTextView;
-    private Button mBtnForegroundService;
-    private Button mBtnMqtt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void initView() {
-        mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
-        mBtnAdvancedTextView.setOnClickListener(this);
-        mBtnBottomAlignment = (Button) findViewById(R.id.btn_bottom_alignment);
-        mBtnBottomAlignment.setOnClickListener(this);
-        mBtnAdvancedTextView = (Button) findViewById(R.id.btn_advanced_text_view);
-        mBtnAdvancedTextView.setOnClickListener(this);
-        mBtnForegroundService = (Button) findViewById(R.id.btn_foreground_service);
-        mBtnForegroundService.setOnClickListener(this);
-        mBtnMqtt = (Button) findViewById(R.id.btn_mqtt);
-        mBtnMqtt.setOnClickListener(this);
+        findViewById(R.id.btn_advanced_text_view).setOnClickListener(this);
+        findViewById(R.id.btn_bottom_alignment).setOnClickListener(this);
+        findViewById(R.id.btn_advanced_text_view).setOnClickListener(this);
+        findViewById(R.id.btn_foreground_service).setOnClickListener(this);
+        findViewById(R.id.btn_mqtt).setOnClickListener(this);
+        findViewById(R.id.btn_floating_window).setOnClickListener(this);
     }
 
     @Override
@@ -62,6 +51,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_mqtt:
                 startActivity(new Intent(this, MqttActivity.class));
+                break;
+            case R.id.btn_floating_window:
+                startActivity(new Intent(this, FloatingWindowActivity.class));
                 break;
         }
     }
