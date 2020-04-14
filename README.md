@@ -13,3 +13,7 @@
 ## mqtt
 
 MQTT消息收发，博客地址：[MQTT协议实现Android中的消息收发](https://www.jianshu.com/p/98f62db873ec)
+
+## floatingwindow
+
+视频悬浮窗口，博客地址：[Android视频悬浮窗口实现](https://www.jianshu.com/p/941f0d6993f1)
