@@ -8,7 +8,7 @@
 
 ## foregroundservice
 
-前台服务的使用，博客地址：[SpannableStringBuilder实现TextView华丽变身](https://www.jianshu.com/p/58f3b7404a59)
+前台服务的使用，博客地址：[Android通知栏前台服务](https://www.jianshu.com/p/58f3b7404a59)
 
 ## mqtt
 
