@@ -17,3 +17,7 @@ MQTT消息收发，博客地址：[MQTT协议实现Android中的消息收发](ht
 ## floatingwindow
 
 视频悬浮窗口，博客地址：[Android视频悬浮窗口实现](https://www.jianshu.com/p/941f0d6993f1)
+
+## bluetoothcs
+
+经典蓝牙连接，博客地址：[Android蓝牙开发（二）经典蓝牙消息传输实现](https://www.jianshu.com/p/12395bfe4efb)
