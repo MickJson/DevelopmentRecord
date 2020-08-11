@@ -1,3 +1,4 @@
+include ':bluetoothcs'
 include ':app', ':advancedtextview'
 rootProject.name='DevelopmentRecord'
 include ':foregroundservice'

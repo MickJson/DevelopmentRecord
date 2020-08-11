@@ -17,6 +17,8 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
+import java.util.concurrent.Executors;
+
 /**
  * @author 几圈年轮
  * @Email teamfamily17@163.com
@@ -59,12 +61,12 @@ public class MqttActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mqtt);
         initView();
-        new Thread(new Runnable() {
+        Executors.newCachedThreadPool().execute(new Runnable() {
             @Override
             public void run() {
                 initClient();
             }
-        }).start();
+        });
     }
 
     private void initView() {
