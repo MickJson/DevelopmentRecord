@@ -10,6 +10,7 @@ import com.nianlun.advancedtextview.AdvancedTextViewActivity;
 import com.nianlun.advancedtextview.BottomAlignmentActivity;
 import com.nianlun.floatingwindow.FloatingWindowActivity;
 import com.nianlun.foregroundservice.ForegroundServiceActivity;
+import com.nianlun.greendaodb.GreenDaoDBActivity;
 import com.nianlun.mqtt.MqttActivity;
 
 /**
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_foreground_service).setOnClickListener(this);
         findViewById(R.id.btn_mqtt).setOnClickListener(this);
         findViewById(R.id.btn_floating_window).setOnClickListener(this);
+        findViewById(R.id.btn_green_dao).setOnClickListener(this);
     }
 
     @Override
@@ -47,13 +49,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_bottom_alignment:
                 startActivity(new Intent(this, BottomAlignmentActivity.class));
                 break;
-            default:
-                break;
             case R.id.btn_mqtt:
                 startActivity(new Intent(this, MqttActivity.class));
                 break;
             case R.id.btn_floating_window:
                 startActivity(new Intent(this, FloatingWindowActivity.class));
+                break;
+            case R.id.btn_green_dao:
+                startActivity(new Intent(this, GreenDaoDBActivity.class));
+            default:
                 break;
         }
     }

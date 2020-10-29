@@ -9,37 +9,33 @@
 
     <Button
         android:id="@+id/btn_bottom_alignment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView底部对齐"
-        android:textColor="@android:color/black" />
+        style="@style/ButtonStyle"
+        android:text="TextView底部对齐" />
 
     <Button
         android:id="@+id/btn_advanced_text_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SpannableStringBuilder使用"
-        android:textColor="@android:color/black" />
+
+        style="@style/ButtonStyle"
+        android:text="SpannableStringBuilder使用" />
 
     <Button
         android:id="@+id/btn_foreground_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="前台服务"
-        android:textColor="@android:color/black" />
+        style="@style/ButtonStyle"
+        android:text="前台服务" />
 
     <Button
         android:id="@+id/btn_mqtt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="MQTT收发指令"
-        android:textColor="@android:color/black" />
+        style="@style/ButtonStyle"
+        android:text="MQTT收发指令" />
 
     <Button
         android:id="@+id/btn_floating_window"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="悬浮窗"
-        android:textColor="@android:color/black" />
+        style="@style/ButtonStyle"
+        android:text="悬浮窗" />
+
+    <Button
+        android:id="@+id/btn_green_dao"
+        style="@style/ButtonStyle"
+        android:text="GreenDao数据库" />
 
 </LinearLayout>

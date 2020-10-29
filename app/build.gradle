@@ -31,4 +31,5 @@ dependencies {
     implementation project(path: ':foregroundservice')
     implementation project(path: ':mqtt')
     implementation project(path: ':floatingwindow')
+    implementation project(path: ':greendaodb')
 }
