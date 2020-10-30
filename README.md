@@ -17,3 +17,7 @@ MQTT消息收发，博客地址：[MQTT协议实现Android中的消息收发](ht
 ## floatingwindow
 
 视频悬浮窗口，博客地址：[Android视频悬浮窗口实现](https://www.cnblogs.com/jqnl/p/12699335.html)
+
+## greendaodb
+
+数据库GreenDao使用说明，博客地址：[Android数据库GreenDao使用说明](https://www.cnblogs.com/jqnl/p/13900433.html)
