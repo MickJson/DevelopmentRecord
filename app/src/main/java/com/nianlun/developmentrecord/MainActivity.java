@@ -12,6 +12,7 @@ import com.nianlun.floatingwindow.FloatingWindowActivity;
 import com.nianlun.foregroundservice.ForegroundServiceActivity;
 import com.nianlun.greendaodb.GreenDaoDBActivity;
 import com.nianlun.mqtt.MqttActivity;
+import com.nianlun.objectboxdb.ObjectBoxDBActivity;
 
 /**
  * @author 几圈年轮
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_mqtt).setOnClickListener(this);
         findViewById(R.id.btn_floating_window).setOnClickListener(this);
         findViewById(R.id.btn_green_dao).setOnClickListener(this);
+        findViewById(R.id.btn_object_box).setOnClickListener(this);
     }
 
     @Override
@@ -57,7 +59,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_green_dao:
                 startActivity(new Intent(this, GreenDaoDBActivity.class));
-            default:
+                break;
+            case R.id.btn_object_box:
+                startActivity(new Intent(this, ObjectBoxDBActivity.class));
+                break;
+                default:
                 break;
         }
     }

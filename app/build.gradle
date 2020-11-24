@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -32,4 +36,5 @@ dependencies {
     implementation project(path: ':mqtt')
     implementation project(path: ':floatingwindow')
     implementation project(path: ':greendaodb')
+    implementation project(path: ':objectboxdb')
 }

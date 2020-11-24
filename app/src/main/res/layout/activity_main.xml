@@ -38,4 +38,9 @@
         style="@style/ButtonStyle"
         android:text="GreenDao数据库" />
 
+    <Button
+        android:id="@+id/btn_object_box"
+        style="@style/ButtonStyle"
+        android:text="ObjectBox数据库" />
+
 </LinearLayout>

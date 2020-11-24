@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    ext.objectboxVersion = '2.8.1'
     repositories {
         google()
         jcenter()
@@ -11,6 +12,8 @@ buildscript {
         classpath 'com.android.tools.build:gradle:3.5.4'
         // GreenDao插件
         classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+
+        classpath "io.objectbox:objectbox-gradle-plugin:$objectboxVersion"
     }
 }
 
