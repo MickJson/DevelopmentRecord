@@ -2,7 +2,9 @@
 
 主要对平时`Android`开发所用知识进行总结记录，欢迎查阅。
 
-已做模块化处理，配置gradle.properties文件isModule，设置Module为Application或者Library。
+APP空壳，调用依赖模块化处理，配置gradle.properties文件isModule，设置Module为Application或者Library运行查看。
+
+模块化理解及流程相关，可以查看博客说明：[Android组件化、模块化实现](https://www.cnblogs.com/jqnl/p/14109156.html)
 
 ## advancedtextview
 
