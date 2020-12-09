@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AdvancedTextView</string>
+    <string name="advancedtextview_app_name">advancedtextview</string>
+    <string name="more_adv">更多用法展示</string>
 </resources>

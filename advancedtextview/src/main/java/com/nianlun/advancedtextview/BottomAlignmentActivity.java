@@ -1,5 +1,6 @@
 package com.nianlun.advancedtextview;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
@@ -8,15 +9,19 @@ import android.text.SpannableStringBuilder;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.nianlun.advancedtextview.bean.TextItem;
 
+@Route(path = "/advancedtextview/BottomAlignmentActivity")
 public class BottomAlignmentActivity extends AppCompatActivity {
 
-    private TextView mTvNumberUnit;
+    private TextView mTvNumberUnit, mTvMore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +29,21 @@ public class BottomAlignmentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bottom_alignment);
         initView();
         setBottomAlignment(new TextItem(37.0f, "℃"));
+        initListener();
+    }
+
+    private void initListener() {
+        mTvMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(BottomAlignmentActivity.this, AdvancedTextViewActivity.class));
+            }
+        });
     }
 
     private void initView() {
-        mTvNumberUnit = (TextView) findViewById(R.id.tv_number_unit);
+        mTvNumberUnit = (TextView) findViewById(R.id.tv_number_unittv_atv);
+        mTvMore = findViewById(R.id.tv_more_atv);
     }
 
     private void setBottomAlignment(TextItem item) {

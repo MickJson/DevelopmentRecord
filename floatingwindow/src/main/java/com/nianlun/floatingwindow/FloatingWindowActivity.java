@@ -1,8 +1,6 @@
 package com.nianlun.floatingwindow;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.media.Image;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
@@ -17,6 +15,7 @@ import android.widget.VideoView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.bumptech.glide.Glide;
 
 /**
@@ -24,6 +23,7 @@ import com.bumptech.glide.Glide;
  * @Email teamfamily17@163.com
  * @description 悬浮窗使用
  */
+@Route(path = "/floatingwindow/FloatingWindowActivity")
 public class FloatingWindowActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final int REQUEST_OVERLAY_CODE = 1;

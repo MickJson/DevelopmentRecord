@@ -22,11 +22,14 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 /**
  * @author 几圈年轮
  * @Email teamfamily17@163.com
  * @description 富文本SpannableStringBuilder使用
  */
+@Route(path = "/advancedtextview/AdvancedTextViewActivity")
 public class AdvancedTextViewActivity extends AppCompatActivity {
 
     private TextView mTvAdvanced01;

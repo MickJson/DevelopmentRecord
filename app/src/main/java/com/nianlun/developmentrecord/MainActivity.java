@@ -1,18 +1,11 @@
 package com.nianlun.developmentrecord;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.nianlun.advancedtextview.AdvancedTextViewActivity;
-import com.nianlun.advancedtextview.BottomAlignmentActivity;
-import com.nianlun.floatingwindow.FloatingWindowActivity;
-import com.nianlun.foregroundservice.ForegroundServiceActivity;
-import com.nianlun.greendaodb.GreenDaoDBActivity;
-import com.nianlun.mqtt.MqttActivity;
-import com.nianlun.objectboxdb.ObjectBoxDBActivity;
+import com.alibaba.android.arouter.launcher.ARouter;
 
 /**
  * @author 几圈年轮
@@ -43,25 +36,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_advanced_text_view:
-                startActivity(new Intent(this, AdvancedTextViewActivity.class));
+                ARouter.getInstance().build("/advancedtextview/AdvancedTextViewActivity").navigation();
                 break;
             case R.id.btn_foreground_service:
-                startActivity(new Intent(this, ForegroundServiceActivity.class));
+                ARouter.getInstance().build("/foregroundservice/ForegroundServiceActivity").navigation();
                 break;
             case R.id.btn_bottom_alignment:
-                startActivity(new Intent(this, BottomAlignmentActivity.class));
+                ARouter.getInstance().build("/advancedtextview/BottomAlignmentActivity").navigation();
                 break;
             case R.id.btn_mqtt:
-                startActivity(new Intent(this, MqttActivity.class));
+                ARouter.getInstance().build("/mqtt/MqttActivity").navigation();
                 break;
             case R.id.btn_floating_window:
-                startActivity(new Intent(this, FloatingWindowActivity.class));
+                ARouter.getInstance().build("/floatingwindow/FloatingWindowActivity").navigation();
                 break;
             case R.id.btn_green_dao:
-                startActivity(new Intent(this, GreenDaoDBActivity.class));
+                ARouter.getInstance().build("/greendaodb/GreenDaoDBActivity").navigation();
                 break;
             case R.id.btn_object_box:
-                startActivity(new Intent(this, ObjectBoxDBActivity.class));
+                ARouter.getInstance().build("/objectboxdb/ObjectBoxDBActivity").navigation();
                 break;
                 default:
                 break;

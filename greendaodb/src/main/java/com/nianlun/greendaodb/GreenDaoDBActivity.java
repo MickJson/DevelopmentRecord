@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.nianlun.greendaodb.adapter.UserAdapter;
 import com.nianlun.greendaodb.database.DaoManager;
 import com.nianlun.greendaodb.database.DaoUtilsStore;
@@ -19,7 +20,7 @@ import com.nianlun.greendaodb.utils.SnowflakeIdGenerator;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
+@Route(path = "/greendaodb/GreenDaoDBActivity")
 public class GreenDaoDBActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnAdd;

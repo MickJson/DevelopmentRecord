@@ -3,7 +3,7 @@
     package="com.nianlun.greendaodb">
 
     <application>
-        <activity android:name=".GreenDaoDBActivity"></activity>
+        <activity android:name=".GreenDaoDBActivity"/>
     </application>
 
 </manifest>

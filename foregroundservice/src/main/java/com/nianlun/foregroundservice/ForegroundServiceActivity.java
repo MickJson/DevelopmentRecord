@@ -9,6 +9,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
+@Route(path = "/foregroundservice/ForegroundServiceActivity")
 public class ForegroundServiceActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override

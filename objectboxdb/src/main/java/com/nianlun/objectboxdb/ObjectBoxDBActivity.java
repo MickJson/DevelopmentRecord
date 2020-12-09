@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
 import com.nianlun.objectboxdb.adapter.UserAdapter;
 import com.nianlun.objectboxdb.database.ObjectBox;
 import com.nianlun.objectboxdb.entity.User;
@@ -22,7 +23,7 @@ import java.util.Random;
 
 import io.objectbox.Box;
 import io.objectbox.BoxStore;
-
+@Route(path = "/objectboxdb/ObjectBoxDBActivity")
 public class ObjectBoxDBActivity extends AppCompatActivity implements View.OnClickListener {
 
     private BoxStore mBoxStore;

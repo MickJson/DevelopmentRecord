@@ -1,4 +1,4 @@
-include ':app', ':advancedtextview', ':greendaodb', ':objectboxdb'
+include ':app', ':advancedtextview', ':greendaodb', ':objectboxdb', ':libbase'
 rootProject.name='DevelopmentRecord'
 include ':foregroundservice'
 include ':mqtt'

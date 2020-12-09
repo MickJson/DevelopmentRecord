@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallbackExtended;
 import org.eclipse.paho.client.mqttv3.MqttClient;
@@ -24,6 +26,7 @@ import java.util.concurrent.Executors;
  * @Email teamfamily17@163.com
  * @description MQTT协议实现Android中的指令收发--MqttClient
  */
+@Route(path = "/mqtt/MqttActivity")
 public class MqttActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**

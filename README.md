@@ -2,6 +2,8 @@
 
 主要对平时`Android`开发所用知识进行总结记录，欢迎查阅。
 
+已做模块化处理，配置gradle.properties文件isModule，设置Module为Application或者Library。
+
 ## advancedtextview
 
 `TextView`底部对齐及`SpannableStringBuilder`的使用，博客地址：[Android 文本TextView底部对齐实现](https://www.cnblogs.com/jqnl/p/12605004.html)及[SpannableStringBuilder实现TextView华丽变身](https://www.cnblogs.com/jqnl/p/12189032.html)

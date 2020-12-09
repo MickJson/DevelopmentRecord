@@ -63,7 +63,7 @@ public class FloatingWindow {
     }
 
     public void dismiss() {
-        if (mWindowManager != null && mShowView != null) {
+        if (mWindowManager != null && mShowView != null && mShowView.isAttachedToWindow()) {
             mWindowManager.removeView(mShowView);
         }
     }
